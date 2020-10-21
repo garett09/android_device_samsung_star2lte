@@ -46,7 +46,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.PDA=$(PRODUCT_PDA_VERSION)
-
-# OTA
-PRODUCT_PROPERTY_OVERRIDES += \
-    lineage.updater.uri=https://raw.githubusercontent.com/synt4x93/OTA/master/star2lte.json
