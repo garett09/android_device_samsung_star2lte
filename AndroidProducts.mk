@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_star2lte.mk
+    $(LOCAL_DIR)/revengeos_star2lte.mk
 
 COMMON_LUNCH_CHOICES := \
-     lineage_star2lte-userdebug \
-     lineage_star2lte-eng \
-     lineage_star2lte-user
+     revengeos_star2lte-userdebug \
+     revengeos_star2lte-eng \
+     revengeos_star2lte-user
