@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_star2lte.mk
+    $(LOCAL_DIR)/arrow_star2lte.mk
 
 COMMON_LUNCH_CHOICES := \
-     lineage_star2lte-userdebug \
-     lineage_star2lte-eng \
-     lineage_star2lte-user
+     arrow_star2lte-userdebug \
+     arrow_star2lte-eng \
+     arrow_star2lte-user
