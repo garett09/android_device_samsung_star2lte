@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_star2lte.mk
+    $(LOCAL_DIR)/dot_star2lte.mk
 
 COMMON_LUNCH_CHOICES := \
-     arrow_star2lte-userdebug \
-     arrow_star2lte-eng \
-     arrow_star2lte-user
+     dot_star2lte-userdebug \
+     dot_star2lte-eng \
+     dot_star2lte-user
