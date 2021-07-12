@@ -1,8 +1,7 @@
 [
     {
-        "repository": "garett09/android_device_samsung_universal9810-common",
+        "repository": "android_device_samsung_universal9810-common",
         "target_path": "device/samsung/universal9810-common",
-        "remote": "github",
-        "revision": "pixel_eleven"
+        "branch": "pixel_eleven"
     }
 ]

@@ -16,3 +16,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_star2lte.mk
+
+COMMON_LUNCH_CHOICES := \
+    aosp_star2lte-user \
+    aosp_star2lte-userdebug \
+    aosp_star2lte-eng
