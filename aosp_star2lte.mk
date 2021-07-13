@@ -28,7 +28,6 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
  # PixelExperience Properties
-TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1440
 
 # Device identifier. This must come after all inclusions 
@@ -37,14 +36,13 @@ PRODUCT_NAME := aosp_star2lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G965F
 PRODUCT_MANUFACTURER := samsung
-TARGET_USES_AOSP_RECOVERY := true
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=star2ltexx \
-    PRIVATE_BUILD_DESC="redfin-user 11 RQ1A.210205.004 7038034 release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.210605.005 7349499 release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.PDA=G965FXXUCFTK1 \
