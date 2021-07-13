@@ -23,32 +23,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/star2lte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
-#PE specific
+ # PixelExperience Properties
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1440
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_USES_AOSP_RECOVERY := true
 
-# Device identifier. This must come after all inclusions
+# Device identifier. This must come after all inclusions 
 PRODUCT_DEVICE := star2lte
 PRODUCT_NAME := aosp_star2lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G965F
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_PDA_MODEL := G965F
-PRODUCT_PDA_MODEL_VERSION := XXSCFTK2
-PRODUCT_PDA_VERSION := $(PRODUCT_PDA_MODEL)$(PRODUCT_PDA_MODEL_VERSION)
+TARGET_USES_AOSP_RECOVERY := true
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-BUILD_FINGERPRINT := samsung/star2ltexx/star2lte:10/QP1A.190711.020/$(PRODUCT_PDA_VERSION):user/release-keys
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=star2ltexx \
-    PRODUCT_DEVICE=star2lte \
-    PRIVATE_BUILD_DESC="star2ltexx-user 10 QP1A.190711.020 $(PRODUCT_PDA_VERSION) release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 11 RQ1A.210205.004 7038034 release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.PDA=$(PRODUCT_PDA_VERSION)
+    ro.build.PDA=G965FXXUCFTK1 \
+    ro.build.fingerprint=google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys
