@@ -29,6 +29,9 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 
  # PixelExperience Properties
 TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Device identifier. This must come after all inclusions 
 PRODUCT_DEVICE := star2lte
