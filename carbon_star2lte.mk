@@ -30,7 +30,8 @@ $(call inherit-product, vendor/carbon/config/gsm.mk)
 $(call inherit-product, vendor/carbon/config/common.mk)
 
  # PixelExperience Properties
-TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USE_GENERIC_WALLPAPER := true
 
 # Device identifier. This must come after all inclusions 
 PRODUCT_DEVICE := star2lte
