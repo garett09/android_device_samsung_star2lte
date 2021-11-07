@@ -23,18 +23,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/star2lte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common ShapeShiftOS stuff.
+# Inherit some common AOSP stuff.
 $(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_GAPPS_ARCH := arm64
+FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := star2lte
-PRODUCT_NAME := ssos_star2lte
+PRODUCT_NAME := aosp_star2lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G965F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+TARGET_BOOT_ANIMATION_RES := 1440
 
 BUILD_FINGERPRINT := "samsung/star2ltexx/star2lte:10/QP1A.190711.020/G965FXXUCFTK1:user/release-keys"
 
