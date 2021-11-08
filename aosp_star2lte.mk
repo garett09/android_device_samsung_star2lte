@@ -24,7 +24,7 @@ $(call inherit-product, device/samsung/star2lte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_GAPPS_ARCH := arm64
 FACE_UNLOCK_SUPPORTED := true
