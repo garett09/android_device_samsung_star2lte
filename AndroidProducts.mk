@@ -16,3 +16,7 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/evolution_star2lte.mk
+
+COMMON_LUNCH_CHOICES := \
+    evolution_star2lte-userdebug \
+    evolution_star2lte-eng
